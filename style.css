@@ -1,0 +1,122 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* VARIABLES */
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+/* PAGE */
+body {
+  min-height: 100vh;
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Figtree', sans-serif;
+}
+
+/* CARD */
+.card {
+  background-color: var(--white);
+  width: 327px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--black);
+  box-shadow: 8px 8px 0 var(--black);
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 16px 16px 0 var(--black);
+}
+
+/* IMAGE */
+.card-image {
+  width: 100%;
+  border-radius: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+/* CONTENT */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* BADGE */
+.badge {
+  background-color: var(--yellow);
+  color: var(--black);
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  width: fit-content;
+}
+
+/* DATE */
+.date {
+  font-size: 0.75rem;
+  color: var(--black);
+}
+
+/* TITLE */
+.title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.title:hover {
+  color: var(--yellow);
+}
+
+/* DESCRIPTION */
+.description {
+  font-size: 0.875rem;
+  color: var(--gray);
+  line-height: 1.5;
+}
+
+/* AUTHOR */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.author-avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.author-name {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: var(--black);
+}
+
+/* ATTRIBUTION */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
