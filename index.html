@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | Blog preview card</title>
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap 5 CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 
-    <title>Frontend Mentor | Blog preview card</title>
-  </head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+</head>
 
-  <body>
-    <main class="card">
+<body class="bg-warning bg-opacity-25">
+
+  <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+    <div class="card shadow-sm p-4" style="max-width: 380px;">
+
       <img
-        class="card-image"
         src="./assets/images/illustration-article.svg"
-        alt="Illustration article"
+        alt="Article illustration"
+        class="img-fluid rounded mb-3"
       />
 
-      <div class="card-content">
-        <span class="badge">Learning</span>
+      <span class="badge bg-warning text-dark mb-3 align-self-start">
+        Learning
+      </span>
 
-        <p class="date">Published 21 Dec 2023</p>
+      <p class="small text-muted mb-2">
+        Published 21 Dec 2023
+      </p>
 
-        <h1 class="title">HTML & CSS foundations</h1>
+      <h1 class="h5 fw-bold mb-3">
+        HTML & CSS foundations
+      </h1>
 
-        <p class="description">
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
-        </p>
+      <p class="text-muted mb-4">
+        These languages are the backbone of every website, defining structure, content, and presentation.
+      </p>
 
-        <div class="author">
-          <img
-            class="author-avatar"
-            src="./assets/images/image-avatar.webp"
-            alt="Greg Hooper avatar"
-          />
-          <span class="author-name">Greg Hooper</span>
-        </div>
+      <div class="d-flex align-items-center gap-2">
+        <img
+          src="./assets/images/image-avatar.webp"
+          alt="Author avatar"
+          width="32"
+          height="32"
+          class="rounded-circle"
+        />
+        <span class="fw-bold small">Greg Hooper</span>
       </div>
-    </main>
 
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-        Frontend Mentor
-      </a>.
-      Coded by <a href="#">Ashley Henderson</a>.
-    </footer>
-  </body>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
